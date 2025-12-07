@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* 1️⃣ Importa las fuentes desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* * {
+  outline: 1px solid red;
+}  */
+
+@theme {
+  --font-title: "Fraunces", serif;
+  --font-body: "Quicksand", sans-serif;
+
+  --color-primary: #3d0528;
+  --color-secondary: #191118;
+  --color-background: #fff1f6;
+  --color-text: #191118;
+  --color-option-one: #e9d7d6;
+  --color-option-two: #ffce76;
+  --color-option-three: #fcb1cf;
+  --color-option-four: #9ed2f6;
+
+  --color-soda-blue: #4b7dd6;
+  --color-soda-yellow: #f7ba37;
+  --color-soda-pink: #fe9fd9;
+}
+
+@layer base {
+  html {
+    font-family: "Quicksand", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Fraunces", serif;
+    color: var(--color-primary);
+  }
+}
